@@ -1,17 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>Contact</title>
 </head>
 <body>
 
     <h1>Contact Page</h1>
 
-    <a href="index.html">Home</a> |
-    <a href="about.html">About</a> |
-    <a href="contact.html">Contact</a>
+    <!-- Navigation with extra info -->
+    <nav>
+        <strong>Menu:</strong>
+        <a href="index.html">Home</a> |
+        <a href="about.html">About</a> |
+        <a href="admission.html">Admission</a> |
+        <a href="contact.html">Contact</a>
+        <br>
+        <small>You are on the Contact page. Reach out to us using the details below.</small>
+    </nav>
+    <hr>
 
-    <p>Contact us at: example@email.com</p>
+    <!-- Contact Information -->
+    <h2>Contact Information</h2>
+    <p>Email: <a href="mailto:example@email.com">example@email.com</a></p>
+    <p>Phone: +92-300-1234567</p>
+    <p>Address: University of Engineering & Technology, Peshawar</p>
+
+    <!-- Simple contact form -->
+    <h2>Send Us a Message</h2>
+    <form>
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Your Name"><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Your Email"><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" placeholder="Type your message here"></textarea><br><br>
+
+        <input type="submit" value="Send">
+        <input type="reset" value="Reset">
+    </form>
 
 </body>
 </html>
